@@ -1,13 +1,13 @@
-nome = input("informe seu nome: ")
-email = input("informe seu email: ")
-cpf = input("informe seu cpf: ")
-telefone = input("informe seu numero: ")
+nome = input("informe seu nome: ").strip().title()
+email = input("informe seu email: ").strip().lower()
+cpf = input("informe seu cpf: ").strip()
+telefone = input("informe seu numero: ").strip()
 idade = input("informe sua idade: ")
 altura = input("informe sua altura: ")
 
 #conversao de tipo
 idade = int(idade)
-altura = float(altura)
+altura = float(altura).replece(",",".")
 
 #saida de dados 
 print(f"nome: {nome}, Tipo {type(nome)}")
