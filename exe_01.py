@@ -6,9 +6,12 @@
 6#note: e não se esqueçam do detalhe mais importante de todos:
 
 #entrada de dados 
-gasolina = float(input(5.00).replace(",","."))
-etanol = float(input(3.00).replace(",","."))
-if =  
-    print(f"(gasolina) melhor combustivel.")
+gasolina = float(input("informe um valo: ").replace(",","."))
+etanol = float(input("informe um valor: ").replace(",","."))
+
+if etanol <= gasolina * 0.75:
+    print(" melhor abastecer com etanol.")
 else:
-    print(f"(etanol) pior combustivel.")
+    print("melhor abastecer com gasolina.")
+
+
